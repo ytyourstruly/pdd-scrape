@@ -1,0 +1,7 @@
+playwright>=1.40
+python-dotenv>=1.0
+yt-dlp
+faster-whisper>=1.0
+# CUDA 12 runtime for GPU transcription. Skip these two lines on a CPU-only machine.
+nvidia-cublas-cu12; sys_platform == "linux"
+nvidia-cudnn-cu12==9.*; sys_platform == "linux"
